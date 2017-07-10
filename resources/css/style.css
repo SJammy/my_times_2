@@ -1,16 +1,31 @@
 
 body {
-	
+	margin: 0;
+	padding: 0;
 }
 
-.header {
+header {
 	border-bottom: 1px solid black;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	height: 75px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
+}
+
+.logo_title {
+	display: inline-flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	align-content: center;
-	padding: 10px;
+}
+
+.logo {
+	border-right: 1px solid mediumaquamarine;
+	display: inline;
 }
 
 .title span {
@@ -21,26 +36,27 @@ body {
 	margin-left: 10px;
 }
 
-.logo {
-	border-right: 1px solid mediumaquamarine;
-}
-
-.logo_title {
+nav {
 	display: inline-flex;
-	flex-flow: row;
-	justify-content:flex-start;
-	align-items: center;
+	margin: 30px;
+	padding: 0px;
 }
 
 ul {
-	display: inline-flex;
+	display: flex;
 	flex-flow: row wrap;
-	justify-content: flex-end;
-	list-style-type: none;
+	justify-content: center;
+	list-style: none;
+	margin: 0px;
+	padding: 10px;
 }
 
 nav li a {
-	margin: 20px;
+	margin: 30px;
 	color: black;
 	font-weight: bold;
+}
+
+.main_container {
+	margin-top: 100px;
 }
